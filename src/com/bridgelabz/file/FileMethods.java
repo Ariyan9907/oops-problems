@@ -1,6 +1,7 @@
 package com.bridgelabz.file;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class FileMethods {
     //creating file
@@ -102,6 +103,28 @@ public class FileMethods {
             System.out.println(line);
         }
 
+    }
+
+    //wirting by bufferWriter
+
+    public void wirtingBuffer(String path) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(path));
+        bw.write("Sarvanan");
+        bw.newLine();
+        bw.write("Aryan");
+
+        bw.close();
+
+
+    }
+
+    public void scannerReader(String path) throws FileNotFoundException {
+        Scanner sc = new Scanner(new File(path));
+
+        while ((sc.hasNext())){
+            System.out.println(sc.next());
+        }
+        sc.close();
     }
 
 
