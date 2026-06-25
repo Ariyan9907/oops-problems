@@ -37,5 +37,14 @@ public class FileMethods {
 
     }
 
+    //finding length of file in bytecode
+    public long getLength(String path){
+        File file = new File(path);
+        return file.length();
+
+    }
+
+
+
 
 }
