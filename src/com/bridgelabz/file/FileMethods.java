@@ -127,6 +127,18 @@ public class FileMethods {
         sc.close();
     }
 
+    //writing by printwriter
+    public void printWriterWrite(String path) throws IOException {
+        PrintWriter pw = new PrintWriter(new FileWriter(path));
+        pw.println("Welcome");
+        pw.print("Sarvanan\t");
+        pw.println("Ariyan");
+        pw.print(20);
+        pw.close();
+
+
+    }
+
 
 
 
