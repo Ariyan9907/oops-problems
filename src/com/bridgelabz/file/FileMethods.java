@@ -18,11 +18,16 @@ public class FileMethods {
 
     }
 
+    //check file
     public boolean checkFile(String path){
         File file = new File(path);
-
         return file.exists();
+    }
 
+    //get file name
+    public String getingName(String path){
+        File file = new File(path);
+        return file.getName();
     }
 
 
