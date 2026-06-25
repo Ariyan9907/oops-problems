@@ -92,6 +92,18 @@ public class FileMethods {
 
     }
 
+//reading by bffer reader
+
+    public void readingBuffer(String path) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String line;
+
+        while ((line=br.readLine())!=null){
+            System.out.println(line);
+        }
+
+    }
+
 
 
 
