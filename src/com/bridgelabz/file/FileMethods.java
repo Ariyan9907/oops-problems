@@ -44,7 +44,12 @@ public class FileMethods {
 
     }
 
+    //check is file can be read
+    public boolean checkRead(String path){
+        File file = new File(path);
+        return file.canRead();
 
+    }
 
 
 }
