@@ -65,6 +65,15 @@ public class FileMethods {
 
     }
 
+    //rename file
+
+    public boolean renamingFile(String path){
+        File oldFile = new File(path);
+        File newFile = new File("src/com/bridgelabz/file/sample10.txt");
+        return oldFile.renameTo(newFile);
+
+    }
+
 
 
 
