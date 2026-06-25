@@ -30,5 +30,12 @@ public class FileMethods {
         return file.getName();
     }
 
+    //get absolute file name
+    public String getAbsName(String path){
+        File file = new File(path);
+        return file.getAbsolutePath();
+
+    }
+
 
 }
