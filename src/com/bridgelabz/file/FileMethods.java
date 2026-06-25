@@ -1,6 +1,8 @@
 package com.bridgelabz.file;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class FileMethods {
@@ -71,6 +73,20 @@ public class FileMethods {
         File oldFile = new File(path);
         File newFile = new File("src/com/bridgelabz/file/sample10.txt");
         return oldFile.renameTo(newFile);
+
+    }
+
+    //reading file
+    public void readingFile(String path) throws IOException {
+        FileReader fileReader = new FileReader(path);
+        int ch;
+        while ((ch=fileReader.read())!=-1){
+            System.out.println((char)(ch));
+        }
+
+        fileReader.close();
+
+
 
     }
 
