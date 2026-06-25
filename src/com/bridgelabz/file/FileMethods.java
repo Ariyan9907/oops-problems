@@ -57,6 +57,14 @@ public class FileMethods {
 
     }
 
+    //check the path is of file
+
+    public boolean checkItIsFile(String path){
+        File file = new File(path);
+        return file.isFile();
+
+    }
+
 
 
 
