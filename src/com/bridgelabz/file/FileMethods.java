@@ -1,9 +1,6 @@
 package com.bridgelabz.file;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class FileMethods {
     //creating file
@@ -85,8 +82,13 @@ public class FileMethods {
         }
 
         fileReader.close();
+    }
 
+    public void writingFie(String path) throws IOException {
+        FileWriter fileWriter = new FileWriter(path,true);
 
+        fileWriter.write("\nHello java");
+        fileWriter.close();
 
     }
 
