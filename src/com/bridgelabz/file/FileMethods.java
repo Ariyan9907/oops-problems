@@ -50,6 +50,14 @@ public class FileMethods {
         return file.canRead();
 
     }
+    //check is file can be written
+    public boolean checkWrite(String path){
+        File file = new File(path);
+        return file.canRead();
+
+    }
+
+
 
 
 }
